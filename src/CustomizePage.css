@@ -1,0 +1,56 @@
+/* src/CustomizePage.css */
+.customizePage {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+    padding: 20px;
+  }
+  
+  .header h1, .header p {
+    text-align: center;
+  }
+  
+  .mainContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .categories, .previewArea {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+  }
+  
+  .category h2, .previewArea h2 {
+    color: #4CAF50;
+  }
+  
+  .options label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .summary {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .summary p {
+    margin: 10px 0;
+  }
+  
+  .summary button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .summary button:hover {
+    background-color: #45a049;
+  }
+  

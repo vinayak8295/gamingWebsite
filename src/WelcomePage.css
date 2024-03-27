@@ -1,0 +1,52 @@
+.welcome-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .welcome-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .welcome-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .welcome-content button {
+    font-size: 1.2rem;
+    color: #121212; /* Dark text */
+    background-color: #0A84FF; /* Bright accent color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .welcome-content button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+
+  .questionnaire {
+    margin-top: 20px;
+  }
+  
+  .options button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+  }
+  
