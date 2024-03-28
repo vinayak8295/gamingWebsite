@@ -1,5 +1,4 @@
 import  { useState } from 'react';
-import './WelcomePage.css';
 import CustomizePage from './CustomizePage';
 
 
@@ -39,21 +38,21 @@ function WelcomePage() {
   };
   console.log("answers",answers)
   return (
-    <div className="welcome-page">
-      <div className="welcome-content">
+    <div className="h-screen flex justify-center items-center bg-gray-900 text-white font-sans">
+      <div className="text-center max-w-lg p-5">
         {currentStep === 0 ? (
           <>
-            <h1>Build Your Dream PC</h1>
-            <p>Welcome to our PC builder wizard. Let's start by answering a few questions to tailor your perfect PC build.</p>
-            <button onClick={handleStartClick}>Get Started</button>
+            <h1 className='text-5xl mb-5'>Build Your Dream PC</h1>
+            <p className='text-lg mb-7'>Welcome to our PC builder wizard. Let's start by answering a few questions to tailor your perfect PC build.</p>
+            <button className='text-base text-gray-900 bg-blue-600 rounded px-5 py-2.5 cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-700' onClick={handleStartClick}>Get Started</button>
           </>
         ) :   (
           
-          <div className="questionnaire">
-            <h2>{questions[currentStep - 1]?.text}</h2>
-            <div className="options">
+          <div className="mt-5">
+            <h2 className=' text-[25px]'>{questions[currentStep - 1]?.text}</h2>
+            <div >
               {questions[currentStep - 1]?.options.map(option => (
-                <button key={option} onClick={() => handleOptionSelect(questions[currentStep - 1]?.id, option)}>
+                <button className='block mx-auto   border border-gray-300 bg-blue-500 p-4 mt-3 w-[150px]' key={option} onClick={() => handleOptionSelect(questions[currentStep - 1]?.id, option)}>
                   {option}
                 </button>
               ))}
