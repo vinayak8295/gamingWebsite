@@ -1,9 +1,9 @@
 import React from 'react';
-import WelcomePage from './WelcomePage';
+import QuestionarePage from './Questionare/QuestionarePage';
 const App: React.FC = () => {
   return (
 
-     <WelcomePage/>
+     <QuestionarePage/>
 
   );
 }

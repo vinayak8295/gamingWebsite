@@ -1,5 +1,6 @@
 import  { useState } from 'react';
-import CustomizePage from './CustomizePage';
+// import CustomizePage from '../CustomizePage';
+import GamesLike from './GamesLike';
 
 
 
@@ -14,10 +15,15 @@ const questions = [
     text: 'What is your budget?',
     options: ['< $1000', '$1000 - $2000', '> $2000'],
   },
+  {
+    id: 3,
+    text: 'What kind of storage you want',
+    options: ['SSD', 'HDD','BOTH'],
+  },
   // Add more questions as needed
 ];
 
-function WelcomePage() {
+function QuestionarePage() {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState({});
 
@@ -60,11 +66,13 @@ function WelcomePage() {
           
           </div>
         )}
-        {currentStep === 3 && (
-          <CustomizePage/>)}
+        {currentStep === 4 && (
+          <GamesLike/>
+          // <CustomizePage/>
+          )}
       </div>
     </div>
   );
 }
 
-export default WelcomePage;
+export default QuestionarePage;
